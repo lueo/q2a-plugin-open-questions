@@ -91,8 +91,8 @@ class qa_open_qustions {
 	function qa_db_open_qs_selectspec($voteuserid, $start)
 	{
 		$pagesize=qa_opt_if_loaded('page_size_una_qs');	
-		//Temperory fix: For open exchange request (in my website the categoryid=6)
-		$where_clause_question_open='closedbyid IS NULL AND categoryid=6';	
+		//Temperory fix: For open exchange request (in my website the catidpath1=5)
+		$where_clause_question_open='closedbyid IS NULL AND catidpath1=5';	
 		$type='Q';	// question (not hidden)
 		$selectspec=qa_db_posts_basic_selectspec($voteuserid, false);
 		$selectspec['source'].=
